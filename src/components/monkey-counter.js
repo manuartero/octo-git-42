@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./monkey-counter.css";
+import { ReactComponent as HearNoEvilIcn } from '../assets/hear-no-evil.svg';
 
 function MonkeyCounter({ init }) {
   const [n, setN] = useState(init || 0);
@@ -8,8 +9,8 @@ function MonkeyCounter({ init }) {
 
   return (
     <div className="monkey-counter">
-      <span>{n}</span>
-      <button onClick={plusOne}>+1</button>
+      <HearNoEvilIcn />
+      <button onClick={plusOne}>{n}++</button>
     </div>
   );
 }
