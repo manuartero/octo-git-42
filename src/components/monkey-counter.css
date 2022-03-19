@@ -1,0 +1,11 @@
+.monkey-counter {
+  display: flex;
+}
+
+.monkey-counter span {
+  font-size: 50px;
+}
+
+.monkey-counter button {
+  width: 50px;
+}
