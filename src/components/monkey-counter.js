@@ -10,7 +10,11 @@ function MonkeyCounter({ init }) {
 
   return (
     <div className="monkey-counter">
-      {n === 42 ? <HearNoEvilIcn /> : <SeeNoEvilIcn />}
+      {n === 42 ? (
+        <HearNoEvilIcn role="img" aria-label="hear-no-evil" />
+      ) : (
+        <SeeNoEvilIcn role="img" aria-label="see-no-evil" />
+      )}
       <button onClick={plusOne}>{n}++</button>
     </div>
   );
