@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <MonkeyCounter init={13} />
+        <MonkeyCounter init={40} />
       </header>
     </div>
   );
